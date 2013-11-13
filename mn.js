@@ -115,10 +115,9 @@ MilldNginx.prototype._parseLine = function(line, index, lines) {
 
   var mline = '';
   assert(timestamp);
-  obj._raw = line;
-  mline = timestamp + ',' + line; // JSON.stringify(obj);
+  mline = timestamp + ',' + JSON.stringify(obj) + '\n';
 
-  this.push(mline + '\n', 'utf8');
+  this.push(mline, 'utf8');
 };
 
 function parseClf(c) {
