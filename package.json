@@ -1,0 +1,9 @@
+{
+  "name": "milld-nginx",
+  "description": "Parse nginx logs to milld format",
+  "version": "1.0.0",
+  "author": "Joyent (joyent.com)",
+  "engines": {
+    "node": ">=0.8"
+  }
+}
